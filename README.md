@@ -2,7 +2,7 @@
 </head>
 <body>
     <div class="container">
-        <img src="ruta/a/tu/logo.png" alt="Logo" class="logo">
+        <img src="Tarea2/Imagenes/Logo.PNG" alt="Logo" class="logo">
         <h1>Perfil Profesional</h1>
         <p>
             Analista de datos, con manejo de indicadores de gestión, aplicando reglas de negocio a información financiera. 
