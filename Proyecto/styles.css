@@ -5,14 +5,38 @@ body {
     padding: 0;
     display: flex;
     background-color: #f2f2f2;
+    
     text-align: center;
 }
 header {
     background-color: #333333; /* Gris 60% */
     color: #ffffff;
-    padding: 20px 0;
+    padding: 20px 0; /* Aumentar el padding para mayor espacio */
     text-align: center;
+    border-radius: 12px; /* Bordes redondeados */
+    margin: 10px auto; /* Centrar el header y añadir margen superior e inferior */
+    max-width: 90%; /* Limitar el ancho del header para que no ocupe toda la pantalla */
+    transition: all 0.3s ease-in-out; /* Transición suave para efectos hover */
 }
+
+header:hover {
+    transform: translateY(-5px); /* Efecto de elevación al pasar el ratón */
+    box-shadow: 0 8px 16px rgba(224, 152, 7, 0.91); /* Aumentar la sombra en hover */
+    background-color:  0 8px 16px rgba(224, 152, 7, 0.91); /* Cambiar el color de fondo al pasar el ratón */
+}
+
+header h1 {
+    font-size: 2.5em; /* Aumentar el tamaño del texto */
+    letter-spacing: 2px; /* Espaciado entre letras para un toque moderno */
+    margin: 0;
+}
+
+header p {
+    font-size: 1.2em; /* Tamaño del texto del párrafo */
+    margin-top: 10px;
+    opacity: 0.8; /* Ligera transparencia en el texto */
+}
+
 
 /* Barra lateral */
 .sidebar {
@@ -25,6 +49,10 @@ header {
     flex-direction: column;
     align-items: center;
     padding-top: 20px;
+    transform: translateY(-5px); /* Efecto de elevación al pasar el ratón */
+    box-shadow: 0 8px 16px rgba(224, 152, 7, 0.91); /* Aumentar la sombra en hover */
+    background-color:  0 8px 16px rgba(224, 152, 7, 0.91); /* Cambiar el color de fondo al pasar el ratón */
+    transition: all 0.3s ease-in-out; 
 }
 
 .sidebar ul {
@@ -56,6 +84,7 @@ header {
 
 /* Botón de cambio de idioma */
 #lang-switch {
+    font-family: Raleway;
     background-color: #333;
     color: white;
     border: none;
@@ -87,12 +116,12 @@ header {
     margin-bottom: 20px;
     display: flex;
     flex-direction: column;
+    transform: translateY(-5px); /* Efecto de elevación al pasar el ratón */
+    box-shadow: 0 8px 16px rgba(224, 152, 7, 0.91); /* Aumentar la sombra en hover */
+    background-color:  0 8px 16px rgba(224, 152, 7, 0.91); /* Cambiar el color de fondo al pasar el ratón */
+    transition: all 0.3s ease-in-out; 
 }
-
-
-
-/* Sección de Proyectos */
-#proyectos {
+#perfil1 {
     background-color:  white;
     color:  #333;
     padding: 20px;
@@ -102,6 +131,44 @@ header {
     margin-bottom: 20px;
     display: flex;
     flex-direction: column;
+    transform: translateY(-5px); /* Efecto de elevación al pasar el ratón */
+    box-shadow: 0 8px 16px rgba(224, 152, 7, 0.91); /* Aumentar la sombra en hover */
+    background-color:  0 8px 16px rgba(224, 152, 7, 0.91); /* Cambiar el color de fondo al pasar el ratón */
+    transition: all 0.3s ease-in-out; 
+}
+#perfil2 {
+    background-color:  white;
+    color:  #333;
+    padding: 20px;
+    border-radius: 5px;
+    margin: 20px auto;
+    max-width: 800px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    transform: translateY(-5px); /* Efecto de elevación al pasar el ratón */
+    box-shadow: 0 8px 16px rgba(224, 152, 7, 0.91); /* Aumentar la sombra en hover */
+    background-color:  0 8px 16px rgba(224, 152, 7, 0.91); /* Cambiar el color de fondo al pasar el ratón */
+    transition: all 0.3s ease-in-out; 
+}
+
+
+
+
+/* Sección de Proyectos */
+#proyectos {
+    background-color:   #333;
+    color: white;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 12px; /* Bordes redondeados */
+    transform: translateY(-5px); /* Efecto de elevación al pasar el ratón */
+    box-shadow: 0 8px 16px rgba(224, 152, 7, 0.91); /* Aumentar la sombra en hover */
+    background-color:  0 8px 16px rgba(224, 152, 7, 0.91); /* Cambiar el color de fondo al pasar el ratón */
 }
 
 /* Sección de Contacto */
@@ -109,7 +176,7 @@ header {
     background-color: #333;
     color: white;
     padding: 20px;
-    border-radius: 5px;
+    border-radius: 12px; /* Bordes redondeados */
     margin: 20px auto;
     max-width: 800px;
     margin-bottom: 20px;
@@ -130,6 +197,7 @@ header {
 }
 
 #contacto button {
+    
     background-color: #333;
     color: white;
     padding: 10px;
@@ -149,6 +217,9 @@ footer {
     text-align: center;
     margin-top: 40px;
     border-radius: 5px;
+    transform: translateY(-5px); /* Efecto de elevación al pasar el ratón */
+    box-shadow: 0 8px 16px rgba(224, 152, 7, 0.91); /* Aumentar la sombra en hover */
+    background-color:  0 8px 16px rgba(224, 152, 7, 0.91); /* Cambiar el color de fondo al pasar el ratón */
 }
 
 footer a {
@@ -166,23 +237,26 @@ footer a:hover {
     margin: auto;
     overflow: hidden;
     border-radius: 10px;
+    color: orange;
 }
 
 .carousel-container {
     display: flex;
     transition: transform 0.5s ease-in-out;
+    color: orange;
 }
 
 .carousel-container a {
     flex-shrink: 0;
     width: 100%;
     max-width: 100%;
+    color: orange;
 }
-
 .carousel-container img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
+    width: 100%; /* O puedes usar un valor fijo, como width: 300px; */
+    height: auto; /* Mantiene la proporción de la imagen */
+    max-height: 400px; /* Fija una altura máxima, ajusta según tus necesidades */
+    object-fit: cover; /* Ajusta la imagen para que se mantenga dentro del contenedor, cortando si es necesario */
 }
 
 /* Botones de control */
@@ -208,4 +282,9 @@ footer a:hover {
 
 .prev:hover, .next:hover {
     background-color: orange;
+}
+.sidebar ul li a img {
+    margin-right: 8px; /* Espacio entre la imagen y el texto */
+    vertical-align: middle; /* Alinea verticalmente la imagen con el texto */
+    
 }

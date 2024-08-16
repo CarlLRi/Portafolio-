@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.6/lottie.min.js"></script>
     <title>Portafolio Web</title>
     <link rel="stylesheet" href="styles.css">
     <script src="script.js" defer></script>
@@ -12,11 +13,25 @@
     <!-- Barra lateral -->
     <nav class="sidebar">
         <ul>
-            <li><a href="#inicio">Inicio</a></li>
-            <li><a href="#proyectos">Proyectos</a></li>
-            <li><a href="#contacto">Contacto</a></li>
-                <!-- Botón para cambiar el idioma -->
-            <button id="lang-switch">Cambiar a Inglés</button>
+            <li><a href="#inicio"> <img src="./images/incio.png" alt="Inicio" width="20" height="20">
+                Inicio</a></li>
+            <li><a href="#proyectos"><img src="./images/proyec.png" alt="Inicio" width="20" height="20">
+                Proyectos</a></li>
+            <li><a href="#contacto"><img src="./images/contac.png" alt="Inicio" width="20" height="20">
+                Contacto</a></li>
+            <li><a href="https://www.linkedin.com/in/carl-l-83a167251?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BPeQmcE6LR6GVra6c%2BY%2F1AA%3D%3D" target="_blank">
+                <img src="./images/link.png" alt="Inicio" width="20" height="20">
+                Linkedin</a></li>
+            <li><a href="https://github.com/CarlLRi/Portafolio-" target="_blank">
+                <img src="./images/git.png" alt="Inicio" width="20" height="20">
+                github</a></li>
+            <li><a href="https://wa.me/50687571294" target="_blank">
+                <img src="./images/wha.png" alt="Inicio" width="20" height="20">
+                Whatsapp</a></li>            
+         <!-- Botón para cambiar el idioma -->
+            <button id="lang-switch">
+                <img src="./images/usa.png" alt="Inicio" width="20" height="20">
+                Switch to English</button>
         </ul>
     </nav>
 
@@ -35,6 +50,22 @@
                
                 </section>
             </header>
+             <!-- Contenedor para la animación -->
+             <div id="lottie-animation" style="width: 300px; height: 300px; margin: 0 auto;"></div>
+
+
+         <!-- Script para cargar la animación -->
+          <script>
+         // Iniciar la animación Lottie
+          lottie.loadAnimation({
+            container: document.getElementById('lottie-animation'), // ID del contenedor
+          renderer: 'svg', // Renderizador (svg es el más común)
+         loop: true, // La animación se repetirá en bucle
+         autoplay: true, // La animación comienza automáticamente
+         path: 'https://lottie.host/264a245e-cdc5-4f3a-9d3a-7917449523f4/A1mhk1963h.json' // Reemplaza con el link de tu animación Lottie
+         });
+         </script>
+
     
         <!-- Sección de Inicio -->
 
@@ -42,67 +73,169 @@
             <h2>Perfil profesional</h2>
             <p>Analista de datos, con  manejo de  indicadores de gestión, aplicando reglas de negocio a información financiera. Además cuento con el conocimiento  de herramientas de automatización,  (sql, PowerBi, R, administración de bases de datos),  minería de datos y  lenguajes de programación ( java, C#  y Python).</p>
             <!-- Puedes agregar aquí los proyectos -->
+        </section><end></end>
+     
+        <section id="perfil1">
+            <h2>Certificaciones</h2>
+            <p>HTML, Scrum, R, Python
+            </p>
+            <!-- Puedes agregar aquí los proyectos -->
         </section>
-      
+        <section id="perfil2">
+            <h2>Experiencia</h2>
+            <p>Lider de equipo scrum master, Soporte tecnico de hadware, automatización de procesos, crear flujos de trabajo, administrar mesa de servicio.
+            </p>
+            <!-- Puedes agregar aquí los proyectos -->
+        </section>
+        <div id="lottie-animation1" style="width: 300px; height: 300px; margin: 0 auto;"></div>
 
+
+        <!-- Script para cargar la animación -->
+         <script>
+        // Iniciar la animación Lottie
+         lottie.loadAnimation({
+           container: document.getElementById('lottie-animation1'), // ID del contenedor
+         renderer: 'svg', // Renderizador (svg es el más común)
+        loop: true, // La animación se repetirá en bucle
+        autoplay: true, // La animación comienza automáticamente
+        path: 'https://lottie.host/c2c0a3f0-2d42-45f8-ae0d-ca1f9eaa1d4b/yFlkBKzsUn.json' // Reemplaza con el link de tu animación Lottie
+        });
+        </script>
+        
         <!-- Sección de Proyectos -->
         <section id="proyectos">
+            
             <h2>Proyectos</h2>
-            <p>Aquí puedes ver algunos de mis proyectos destacados.</p>
+            <p>Aquí puedes ver algunos de mis proyectos destacados en Html-C#-Java</p>
         
             <!-- Carrusel de imágenes -->
             <div class="carousel">
                 <div class="carousel-container">
-                    <a href="./images/imagen2.PNG" target="_blank">
-                        <img src="./images/imagen2.PNG" alt="Proyecto 1">
+                    
+                    <a href="./images/imagen1.PNG" target="_blank">
+                        <img src="./images/imagen1.PNG" alt="Proyecto 2">
                         <h1>Html Web</h1>
                        
                     </a>
-                    <a href="./images/imagen10.PNG" target="_blank">
-                        <img src="./images/imagen10.PNG" alt="Proyecto 2">
+                    <a href="./images/imagen2.PNG" target="_blank">
+                        <img src="./images/imagen2.PNG" alt="Proyecto 2">
+                        <h1>Home page</h1>
+                        
                     </a>
                     <a href="./images/imagen3.PNG" target="_blank">
-                        <img src= "./images/imagen3.PNG" alt="Proyecto 3">
+                        <img src="./images/imagen3.PNG" alt="Proyecto 2">
+                        <h1>Landing page</h1>
                     </a>
                     <a href="./images/imagen4.PNG" target="_blank">
                         <img src="./images/imagen4.PNG" alt="Proyecto 4">
+                        <h1>Contac</h1>
+                    </a>
+                    <a href="./images/imagen5.PNG" target="_blank">
+                        <img src="./images/imagen5.PNG" alt="Proyecto 4">
+                        <h1>C# Html Sql</h1>
+                    </a>
+                    <a href="./images/imagen6.PNG" target="_blank">
+                        <img src="./images/imagen6.PNG" alt="Proyecto 4">
+                        <h1>Admin Hospital</h1>
+                        
+                    </a>
+                    <a href="./images/imagen7.PNG" target="_blank">
+                        <img src="./images/imagen7.PNG" alt="Proyecto 4">
+                        <h1>User</h1>
+                        
+                    </a>
+                    <a href="./images/imagen8.PNG" target="_blank">
+                        <img src="./images/imagen8.PNG" alt="Proyecto 4">
+                        <h1>Form</h1>
+                        
+                    </a>
+                    <a href="./images/imagen9.PNG" target="_blank">
+                        <img src="./images/imagen9.PNG" alt="Proyecto 4">
+                        <h1>PayPal</h1>
+                        
+                    </a>
+                    <a href="./images/imagen10.PNG" target="_blank">
+                        <img src="./images/imagen10.PNG" alt="Proyecto 4">
+                        <h1> Java Video Game Ldgx</h1>
+                        
+                    </a>
+                    <a href="./images/imagen11.PNG" target="_blank">
+                        <img src="./images/imagen11.PNG" alt="Proyecto 4">
+                        <h1>Patterns Factory</h1>
+                        
+                    </a>
+                    <a href="./images/imagen12.PNG" target="_blank">
+                        <img src="./images/imagen12.PNG" alt="Proyecto 4">
+                        <h1>Patterns Bridge </h1>
+                        
                     </a>
                 </div>
                 <!-- Controles del carrusel -->
                 <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
                 <button class="next" onclick="moveSlide(1)">&#10095;</button>
             </div>
-        </section>
+            
+            
         
 
         <!-- Sección de Contacto -->
         <section id="contacto">
-           
-            <form>
-                <h2>Contacto</h2>
+            <form id="contact-form">
+                <h2>Me puedes contactar</h2>
+                
                 <label for="nombre">Nombre:</label>
                 <input type="text" id="nombre" name="nombre" required>
-
+        
                 <label for="correo">Correo Electrónico:</label>
                 <input type="email" id="correo" name="correo" required>
-
+        
                 <label for="telefono">Teléfono:</label>
                 <input type="tel" id="telefono" name="telefono" pattern="[0-9]{10}">
-
+        
                 <button type="submit">Enviar</button>
             </form>
         </section>
+        
+        <!-- EmailJS script -->
+        <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+        <script type="text/javascript">
+            (function() {
+                emailjs.init("YOUR_USER_ID"); // Reemplaza con tu User ID de EmailJS
+            })();
+        
+            // Manejo del formulario
+            document.getElementById('contact-form').addEventListener('submit', function(event) {
+                event.preventDefault(); // Evita el envío normal del formulario
+        
+                // Datos del formulario
+                const templateParams = {
+                    nombre: document.getElementById('nombre').value,
+                    correo: document.getElementById('correo').value,
+                    telefono: document.getElementById('telefono').value
+                };
+        
+                // Envío del correo
+                emailjs.send('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', templateParams)
+                    .then(function(response) {
+                        alert('Correo enviado correctamente!', response.status, response.text);
+                    }, function(error) {
+                        alert('Error al enviar el correo...', error);
+                    });
+            });
+        </script>
+  
+        
 
         <!-- Footer -->
         <footer>
-            <p>2024 Carl Levey Rìos. Perfil Profesional.</p>
+            
             <p>Correo: cleveyr@ucenfotec.ac.cr</p>
             <p>Teléfono: +506 87 57 12 94</p>
             <a href="./doc/Levey Rios Carl.docx.pdf" download>Descargar Currículum</a>
             <p>
             </p>
-            <a href="./doc/Levey Rios Carl_English.docx (1).pdf" download>Descargar Currículum</a>
-        </footer>
+            <a href="./doc/Levey Rios Carl_English.docx (1).pdf" download> Download Resume to English</a>
+            <p>2024 August Carl Levey Rìos. Perfil Profesional.</p>
     </div>
 </body>
 </html>
