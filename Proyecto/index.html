@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <title>Portafolio Web</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <!-- Barra lateral -->
+    <nav class="sidebar">
+        <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#proyectos">Proyectos</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+                <!-- Botón para cambiar el idioma -->
+            <button id="lang-switch">Cambiar a Inglés</button>
+        </ul>
+    </nav>
+
+    <!-- Contenido Principal -->
+    <div class="content">
+        <!-- Botón para cambiar el idioma -->
+        <body>
+            <header>
+                <div class="logo-container">
+                    <img src="./images/Logo .PNG" alt="Logo" class="logo">
+                </div>
+                <section id="inicio">
+                    <h1>Transformando datos en inteligencia</h1>
+                    <h2>Carl Levey Rios </h2>
+                    <h3>Analista de datos</h3>
+               
+                </section>
+            </header>
+    
+        <!-- Sección de Inicio -->
+
+        <section id="perfil">
+            <h2>Perfil profesional</h2>
+            <p>Analista de datos, con  manejo de  indicadores de gestión, aplicando reglas de negocio a información financiera. Además cuento con el conocimiento  de herramientas de automatización,  (sql, PowerBi, R, administración de bases de datos),  minería de datos y  lenguajes de programación ( java, C#  y Python).</p>
+            <!-- Puedes agregar aquí los proyectos -->
+        </section>
+      
+
+        <!-- Sección de Proyectos -->
+        <section id="proyectos">
+            <h2>Proyectos</h2>
+            <p>Aquí puedes ver algunos de mis proyectos destacados.</p>
+        
+            <!-- Carrusel de imágenes -->
+            <div class="carousel">
+                <div class="carousel-container">
+                    <a href="./images/imagen2.PNG" target="_blank">
+                        <img src="./images/imagen2.PNG" alt="Proyecto 1">
+                        <h1>Html Web</h1>
+                       
+                    </a>
+                    <a href="./images/imagen10.PNG" target="_blank">
+                        <img src="./images/imagen10.PNG" alt="Proyecto 2">
+                    </a>
+                    <a href="./images/imagen3.PNG" target="_blank">
+                        <img src= "./images/imagen3.PNG" alt="Proyecto 3">
+                    </a>
+                    <a href="./images/imagen4.PNG" target="_blank">
+                        <img src="./images/imagen4.PNG" alt="Proyecto 4">
+                    </a>
+                </div>
+                <!-- Controles del carrusel -->
+                <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+                <button class="next" onclick="moveSlide(1)">&#10095;</button>
+            </div>
+        </section>
+        
+
+        <!-- Sección de Contacto -->
+        <section id="contacto">
+           
+            <form>
+                <h2>Contacto</h2>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="correo">Correo Electrónico:</label>
+                <input type="email" id="correo" name="correo" required>
+
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" pattern="[0-9]{10}">
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <p>2024 Carl Levey Rìos. Perfil Profesional.</p>
+            <p>Correo: cleveyr@ucenfotec.ac.cr</p>
+            <p>Teléfono: +506 87 57 12 94</p>
+            <a href="./doc/Levey Rios Carl.docx.pdf" download>Descargar Currículum</a>
+            <p>
+            </p>
+            <a href="./doc/Levey Rios Carl_English.docx (1).pdf" download>Descargar Currículum</a>
+        </footer>
+    </div>
+</body>
+</html>

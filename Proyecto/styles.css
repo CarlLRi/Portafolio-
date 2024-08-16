@@ -1,0 +1,211 @@
+/* Estilos generales */
+body {
+    font-family: Raleway;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    background-color: #f2f2f2;
+    text-align: center;
+}
+header {
+    background-color: #333333; /* Gris 60% */
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Barra lateral */
+.sidebar {
+    width: 200px;
+    background-color: #333;
+    color: white;
+    position: fixed;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 20px 0;
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.sidebar ul li a:hover {
+    color: orange;
+}
+
+/* Contenido principal */
+.content {
+    margin-left: 220px;
+    padding: 20px;
+    background-color: white;
+    width: calc(100% - 220px);
+}
+
+/* Botón de cambio de idioma */
+#lang-switch {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+#lang-switch:hover {
+    background-color: orange;
+}
+
+/* Sección de Inicio */
+#inicio {
+    background-color: #333;
+    color: white;
+    padding: 40px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+#perfil {
+    background-color:  white;
+    color:  #333;
+    padding: 20px;
+    border-radius: 5px;
+    margin: 20px auto;
+    max-width: 800px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+/* Sección de Proyectos */
+#proyectos {
+    background-color:  white;
+    color:  #333;
+    padding: 20px;
+    border-radius: 5px;
+    margin: 20px auto;
+    max-width: 800px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Sección de Contacto */
+#contacto form {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    border-radius: 5px;
+    margin: 20px auto;
+    max-width: 800px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+#contacto label {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+#contacto input {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#contacto button {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+#contacto button:hover {
+    background-color: orange;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-top: 40px;
+    border-radius: 5px;
+}
+
+footer a {
+    color: orange;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+/* Estilos del carrusel */
+.carousel {
+    position: relative;
+    max-width: 100%;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.carousel-container {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-container a {
+    flex-shrink: 0;
+    width: 100%;
+    max-width: 100%;
+}
+
+.carousel-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Botones de control */
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.prev:hover, .next:hover {
+    background-color: orange;
+}
